@@ -5,7 +5,11 @@ const Finance = () => {
         <div className="font-head text-[16px]; text-center font-semibold mt-5">Đừng để vấn đề về tài chính <br /> cản bước bạn?</div>
 
         <div className="font-body font-medium text-[9.5px] mt-5">
+<<<<<<< HEAD
           <p className="leading-6 px-5">
+=======
+          <p className="leading-6">
+>>>>>>> e57aace4253b5be8fbd4b4df7c1698267289afae
           Chúng tôi hiểu và đồng cảm với những trăn trở về tài chính của bạn vào lúc này…<br />
           “Sớm đầu tư từ hôm nay, đường sự nghiệp thẳng tiến…”<br />
           Vì bạn xứng đáng được đầu tư từ ngày hôm nay, Creative Univ <br /> đồng hành cùng bạn với Chính sách học bổng lên đến 50% và <br />

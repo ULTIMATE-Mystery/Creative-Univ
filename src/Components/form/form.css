@@ -89,16 +89,24 @@
                             display: inline-block;
                             margin: 4px 2px;
                             cursor: pointer;
+<<<<<<< HEAD
                             position: relative;
                             z-index: 2;
 
+=======
+                            position: absolute;
+>>>>>>> e57aace4253b5be8fbd4b4df7c1698267289afae
                           }
                           .container {
                             position: relative;
                           }
                           #background-image {
+<<<<<<< HEAD
                             position: relative;
                             z-index: 1;
+=======
+                            position: absolute;
+>>>>>>> e57aace4253b5be8fbd4b4df7c1698267289afae
                             margin-top: -5px;
                             background-color: #FFC72C;
                             padding-bottom: 30px;
@@ -106,8 +114,12 @@
                             height: auto;
                           }
                           #absolute {
+<<<<<<< HEAD
                             position: relative;
                             z-index: 2;
+=======
+                            position: absolute;
+>>>>>>> e57aace4253b5be8fbd4b4df7c1698267289afae
                           }
 
                           /* angled div */
