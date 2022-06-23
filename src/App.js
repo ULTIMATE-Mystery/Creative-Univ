@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import Introduce from "./Components/Introduce/introduce";
 import Problems from "./Components/Problems/problems";
@@ -9,15 +10,42 @@ import Finance from "./Components/finance/finance";
 import Form from "./Components/form/form";
 import Job from "./Components/job/job";
 function App() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined
+  });
+  const [isMobile, setMobile] = useState(false);
+
+  useEffect (() => {
+    const handleSize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener ('resize', handleSize);
+    handleSize();
+    return () => window.removeEventListener('resize', handleSize);
+  },[]);
+
+  useEffect (() => {
+    if(windowSize.width < 600) {
+      setMobile(true);
+    }
+    else {
+      setMobile(false);
+    }
+  }, [windowSize]);
+
   return (
     <div className="h-screen overflow-auto">
       <div className="py-4 ">
         <div className="px-4">
-          <Problems />
+          <Problems isMobile={isMobile} />
         </div>
 
         <div className="mt-16">
-          <Introduce />
+          <Introduce isMobile={isMobile}/>
         </div>
         <div className="px-4">
           <Special />
